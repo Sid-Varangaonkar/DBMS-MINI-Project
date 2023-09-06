@@ -1,0 +1,84 @@
+<html>
+    <head>
+        <title>Placing order</title>
+        <script type = "text/javascript">  
+          function fun() {  
+
+
+             alert ("The order is placed successfully");  
+          }  
+    </script> 
+        <style>
+          body{
+            background-image: url("https://images.unsplash.com/photo-1573883430697-4c3479aae6b9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8bWVkaWNpbmVzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
+            background-size: cover;
+        }
+            input[type=text], select {
+                width: 100%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+              }
+              
+              input[type=submit] {
+                width: 100%;
+                background-color: #4CAF50;
+                color: white;
+                padding: 14px 20px;
+                margin: 8px 0;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+              }
+              
+              input[type=submit]:hover {
+                background-color: #45a049;
+              }
+              
+              .form_back {
+                border-radius: 5px;
+                background-color: #f2f2f2;
+                padding:55px;
+                
+                width:50vw;
+                align:center;
+                marign-top:55vh;
+                margin-left:auto;
+                margin-right:auto;
+                margin-bottom:auto;
+                border:2px solid black;
+                
+    
+              }
+              
+              .Abc{
+                margin-bottom:5vh;
+                text-align:Center;
+                margin-top:10vh;
+                padding:10px;
+                
+              }
+            
+            
+        </style>
+    </head>
+    <body>
+        
+        <div class="Abc" ><h1>Order details<h1></div>
+        <div class="form_back">
+        <form method="POST"action="">
+            <label for="fname">Medicine Name</label><br>
+            <input type="text" id="fname" name="M_name" placeholder="M_name"><br>
+            <label for="lname">Medicine quantity:</label><br>
+            <input type="text" id="lname" name="quantity" placeholder="quantity"><br>
+            <label for="lname">Batch No:</label><br>
+            <input type="text" id="lname" name="Batch_no" placeholder="Batch_no"><br>
+            <br>
+            <input type="submit" value="Submit" onclick = "fun();">
+          </form> 
+        </div>
+    </body>
+    </html>
